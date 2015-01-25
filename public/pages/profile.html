@@ -1,0 +1,78 @@
+    <script>
+        $(".navbar").show();
+        $("body").removeClass('gradient');
+
+        $(".menu-active").removeClass('menu-active');
+        $("#profile-menu").addClass('menu-active');
+    </script>
+
+	<div class="row container container-profile">
+	    <form class="form-horizontal" role="form" id="formProfile" ng-submit="submit()">
+		    <fieldset>
+
+		        <hr/>
+		        <h4 class="text-center">Edit Info</h4>
+
+		        <div class="form-group">
+		            <label class="col-xs-12 control-label" for="textinput">First Name</label>
+		            <div class="col-xs-12">
+		                <input type="text" placeholder="First Name" class="form-control" name="nameProfile" ng-model="user.first_name" required>
+		            </div>
+		        </div>
+
+		        <div class="form-group">
+		            <label class="col-xs-6 control-label" for="textinput">Middle Name</label>
+		            <label class="col-xs-6 control-label" for="textinput">Last Name</label>
+		            <div class="col-xs-6">
+		                <input type="text" placeholder="Middle Name" class="form-control" name="middleNameProfile" ng-model="user.middle_name">
+		            </div>
+
+		            <div class="col-xs-6">
+		                <input type="text" placeholder="Last Name" class="form-control" name="lastNameProfile" ng-model="user.last_name" required>
+		            </div>
+		        </div>
+
+		        <div class="form-group">
+		            <label class="col-xs-12 control-label" for="textinput">Email</label>
+		            <div class="col-xs-12">
+		                <input type="email" placeholder="Email" class="form-control" name="emailProfile" ng-model="user.email" required>
+		            </div>
+		        </div>
+
+		        <div class="form-group">
+		            <label class="col-xs-12 control-label" for="textinput">Twitter</label>
+		            <div class="col-xs-12">
+		                <input type="text" placeholder="Twitter" class="form-control" name="twitterProfile" ng-model="user.twitter_account" required>
+		            </div>
+		        </div>
+
+		        <div class="form-group">
+		            <label class="col-xs-12 control-label" for="textinput">Password</label>
+		            <div class="col-xs-12">
+		                <input type="password" placeholder="Password" class="form-control" name="password1Profile" ng-model="user.password" id="password1Profile" required>
+		            </div>
+		        </div>
+
+
+		        <div class="form-group">
+		            <label class="col-xs-12 control-label" for="textinput">Repeat Password</label>
+		            <div class="col-xs-12">
+		                <input type="password" placeholder="Repeat Password" class="form-control" name="password2Profile" id="password2Profile" required>
+		            </div> 
+		        </div>
+
+				<input type="hidden" name="id" value="{{ user.id }}" />
+		        <input type="hidden" name="updateAccount" value="true" />
+
+
+		        <div class="form-group">
+		            <div class="col-xs-12">
+		                <div class="pull-right">
+		                    <button type="submit" class="btn btn-primary">Save</button>
+		                </div>
+		            </div>
+		        </div>
+
+		    </fieldset>
+	    </form>
+	</div>

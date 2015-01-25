@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "font";
+  src:url("fonts/font.eot");
+  src:url("fonts/font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font.woff") format("woff"),
+    url("fonts/font.ttf") format("truetype"),
+    url("fonts/font.svg#font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "a";
+}
+.icon-email-mail-streamline:before {
+  content: "b";
+}
+.icon-lock:before {
+  content: "c";
+}
+
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #fff;
+}  
+
+.gradient{
+    background: #00d2ff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #00d2ff 0%, #3a7bd5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#00d2ff), color-stop(100%,#3a7bd5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #00d2ff 0%,#3a7bd5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #00d2ff 0%,#3a7bd5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #00d2ff 0%,#3a7bd5 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #00d2ff 0%,#3a7bd5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d2ff', endColorstr='#3a7bd5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-size: cover;
+}
+
+.login{
+    margin-top: 100px;
+}
+.form-signin{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox{
+    margin-bottom: 10px;
+}
+
+.form-signin .form-control{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    color: #3f3f3f;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin input[type="text"]{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    outline:none;
+}
+.form-signin input[type="password"]{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    outline:none;
+}
+.form-signin .btn,
+.container-profile button,
+.btn-mdl{
+    background-color: #5ab5f4;
+    border-color: #4fa2db;
+}
+
+.login-title{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+.profile-img{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.need-help, #title{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.title-nav{
+    margin: 10px 0 0 30px;
+    color:#fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.navbar-default .navbar-toggle{
+    border-color: transparent;
+}
+
+.navbar *{
+    color: #fff;
+}
+
+.navbar-fixed-top{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-fixed-bottom{
+  position:absolute;
+}
+
+.navbar-menu{
+  border-top: 1px solid rgba(255,255,255,0.4);
+  margin-top: 10px;
+}
+
+.nav-menu-item{
+    padding: 12px 3px 2px 3px ;
+    border-right: 1px solid rgba(240,240,240,0.4);
+}
+.nav-menu-item:hover,
+.menu-active{
+    border-bottom: 3px solid #fff;
+}
+
+.content{
+    margin-top: 90px;
+    padding: 20px 10px; 
+    color: #616161;
+}
+
+.content-login{
+    margin-top: 50px;
+}
+
+.box{
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.info-app,
+.add-app{
+    cursor: pointer;
+    margin-top: 13px;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.info-app h2, 
+.info-app h4{
+    margin: 10px 0 0 0;
+}
+
+.icon{
+    font-size: 70px;
+}
+
+.info-twitter{
+    background: #1dcaff;
+}
+.info-text{
+    padding-top: 10px;
+    background: #049372;
+}
+
+.info-passwords{
+    padding-top: 10px;
+    background: #9B59B6;
+}
+
+.add-app{
+    margin-top: 30px;
+    background: #f1f1f1;
+    color: #616161;
+}
+
+.tweets-box,
+.texts-box,
+.passwords-box{
+  margin-top: 20px;
+}
+
+blockquote,
+.passwords {
+  display: inline-block;
+  padding: 16px;
+  margin: 5px 0;
+  max-width: 468px;
+  border: #ddd 1px solid;
+  border-top-color: #eee;
+  border-bottom-color: #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  font: bold 12px/14px Helvetica, Arial, sans-serif;
+  color: #000;
+}
+ 
+blockquote p {
+  margin: 0 5px 10px 0;
+}
+
+.tweet p{
+  font: normal 14px/22px Georgia, "Times New Roman", Palatino, serif;
+}
+
+.text p{
+  font: normal 14px/22px Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+ 
+blockquote a {
+  font-weight: normal;
+  color: #666667;
+  font-size: 12px;
+}
+
+.search{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.search-box{
+  display: none;
+}
+
+.btn-search{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.container-profile{
+  padding: 30px 25px;
+}
+
+.container-newAccount{
+  margin: 20px 0;
+  padding: 10px 25px;
+  color: #4e4e4e;
+  background: rgba(255,255,255,1);
+}
+
+.container-newAccount button{
+    background-color: #5ab5f4;
+    border-color: #4fa2db;
+}
+
+.passwordSite{
+    font-size: 15px;
+}
+
+.passwordLogin .passwordPass{
+    font-weight: 200;
+}
+
+.addNewPass{
+    margin-bottom: 10px;
+}

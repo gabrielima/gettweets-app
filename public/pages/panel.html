@@ -1,0 +1,69 @@
+    <script>
+        $(".navbar").show();
+        $("body").removeClass('gradient');
+        $(".menu-active").removeClass('menu-active');
+        $("#home-menu").addClass('menu-active');
+
+        var date = new Date();
+       	var time = date.getHours();
+
+        if(time < 12)
+        	$(".greeting").text("Good Morning");
+        else if(time >= 12 && time <= 18)
+         	$(".greeting").text("Good Afternoon");
+         else
+         	$(".greeting").text("Good Evening");
+    </script>
+
+	<div class="row content">
+		<h4 class="text-center"><span class="greeting">Good </span>, {{ user.first_name + ' ' + user.last_name }} </h4>
+		
+		<a href="#/tweets">
+			<div class="col-xs-12 box info-app info-twitter" ng-controller="tweetsController">
+				<div class="row text-center">
+					<div class="col-xs-4">
+						<div data-icon="a" class="icon"></div>
+					</div>
+					<div class="col-xs-8">
+						<h2>{{ tweets_length }}</h2>
+						<h4>Tweets</h4>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a href="#/passwords">
+			<div class="col-xs-12 box info-app info-passwords" ng-controller="passwordsController">
+				<div class="row text-center">
+					<div class="col-xs-4">
+						<div data-icon="c" class="icon"></div>
+					</div>
+					<div class="col-xs-8">
+						<h2>{{ passwords_length }}</h2>
+						<h4>Passwords</h4>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a href="#/texts">
+			<div class="col-xs-12 box info-app info-text" ng-controller="textsController">
+				<div class="row text-center">
+					<div class="col-xs-4">
+						<div data-icon="b" class="icon"></div>
+					</div>
+					<div class="col-xs-8">
+						<h2>{{ texts_length }}</h2>
+						<h4>Texts</h4>
+					</div>
+				</div>
+			</div>
+		</a>
+
+
+		<a href="">
+			<div class="col-xs-8 col-xs-offset-2 text-center box add-app">
+				+ Add a new
+			</div>
+		</a>
+	</div>
