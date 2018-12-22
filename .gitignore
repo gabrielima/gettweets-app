@@ -3,3 +3,4 @@ public/js/lib
 *.sql
 *.jpg
 *.png
+.DS_Store
